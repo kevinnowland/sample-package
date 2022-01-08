@@ -7,7 +7,7 @@ understand what each piece does before I turn it into an actual cookie cutter
 template.
 
 
-## Python version and environemnt
+## Python version and environment
 
 
 Although I, as a former data scientist, use conda to manage environments, I 
@@ -34,6 +34,18 @@ did add development dependences, namely, the latest versions of `black`, `flake8
 and `pytest`. I stated that python 3.9 or higher should be use.
 
 I added the `pyproject.toml` to the repo.
+
+
+## make
+
+
+I added a `Makefile` for environment creation and installation. We add a bunch of
+`.PHONY` commands, the text of which will probably end up in our post generation
+script that cookie cutter will use once this is a template. The commands can also
+by used to run tests and such.
+
+Only thing that is very slightly annoying is that we cannot activate our conda
+environment from the a `make` command since it runs everything in subshells.
 
 
 ## Reminders to self about cookie cutter
