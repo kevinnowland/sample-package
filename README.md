@@ -11,7 +11,7 @@ template.
 
 
 Although I, as a former data scientist, use conda to manage environments, I 
-am just going to use a mostly blank python 3.8.12 environment and rely on
+am just going to use a mostly blank python 3.9.7 environment and rely on
 poetry to handle virtual environments and packaging.
 
 
@@ -30,7 +30,15 @@ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poet
 ```
 
 I then ran `poetry init` inside the directory. I specified no dependencies, but I 
-did add development dependences, namely, the latest versions of `black`, `flake8`, `isort`,
-and `mypy`. I stated that python 3.8 or higher should be use.
+did add development dependences, namely, the latest versions of `black`, `flake8`, `isort`,`mypy`,
+and `pytest`. I stated that python 3.9 or higher should be use.
 
 I added the `pyproject.toml` to the repo.
+
+
+## Reminders to self about cookie cutter
+
+
+The post gen hooks probably need to cd into the directory, create the conda environment,
+activate it, then run poetry install.
+
