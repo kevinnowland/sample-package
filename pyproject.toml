@@ -5,9 +5,6 @@ description = "a sample package"
 authors = ["Kevin Nowland <kevin.nowland@gmail.com>"]
 license = "MIT"
 repository = "https://github.com/kevinnowland/sample-package"
-packages = [
-    {include = "src/sample_package"}
-]
 
 
 [tool.poetry.dependencies]
