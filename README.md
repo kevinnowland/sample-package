@@ -31,7 +31,8 @@ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poet
 
 I then ran `poetry init` inside the directory. I specified no dependencies, but I 
 did add development dependences, namely, the latest versions of `black`, `flake8`, `isort`,`mypy`,
-and `pytest`. I stated that python 3.9 or higher should be use.
+and `pytest`. I stated that python 3.9 or higher should be use. I added some configuration
+for these tools in `pyproject.toml` as well as in `.flake8`.
 
 I added the `pyproject.toml` to the repo.
 
