@@ -10,7 +10,7 @@ template.
 ## Python version and environment
 
 
-Although I, as a former data scientist, use conda to manage environments, I 
+Although I, as a former data scientist, use conda to manage environments, I
 am just going to use a mostly blank python 3.9.7 environment and rely on
 poetry to handle virtual environments and packaging.
 
@@ -29,7 +29,7 @@ I installed poetry as recommend on its website via
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 ```
 
-I then ran `poetry init` inside the directory. I specified no dependencies, but I 
+I then ran `poetry init` inside the directory. I specified no dependencies, but I
 did add development dependences, namely, the latest versions of `black`, `flake8`, `isort`,`mypy`,
 and `pytest`. I stated that python 3.9 or higher should be use. I added some configuration
 for these tools in `pyproject.toml` as well as in `.flake8`.
@@ -49,7 +49,7 @@ Only thing that is very slightly annoying is that we cannot activate our conda
 environment from the a `make` command since it runs everything in subshells.
 
 Current commands:
-- `venv`: make the virtual environment (blowing away old if exists) and 
+- `venv`: make the virtual environment (blowing away old if exists) and
 installing dependencies.
 - `install`: install dependencies in the virtual environment
 - `test`: run `pytest`.
@@ -67,4 +67,3 @@ to enforce style standards, but I need to set it up.
 
 The post gen hooks probably need to cd into the directory, create the conda environment,
 activate it, then run poetry install.
-

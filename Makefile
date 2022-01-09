@@ -1,6 +1,6 @@
 PACKAGE_NAME := sample-package
 CLEAN_PACKAGE_NAME := sample_package
-PYTHON_VERSION := 3.9 
+PYTHON_VERSION := 3.9
 
 .ONESHELL:
 SHELL=/bin/bash
