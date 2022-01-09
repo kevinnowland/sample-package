@@ -47,6 +47,17 @@ by used to run tests and such.
 Only thing that is very slightly annoying is that we cannot activate our conda
 environment from the a `make` command since it runs everything in subshells.
 
+Current commands:
+- `venv`: make the virtual environment (blowing away old if exists) and 
+installing dependencies.
+- `install`: install dependencies in the virtual environment
+- `test`: run `pytest`.
+
+
+## Pre-commit
+
+
+
 
 ## Reminders to self about cookie cutter
 
