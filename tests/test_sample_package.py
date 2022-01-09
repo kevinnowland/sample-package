@@ -6,4 +6,4 @@ def test_version():
 
 
 def test_foo():
-    foo.foo()
+    assert "Hello, World!" == foo.foo()

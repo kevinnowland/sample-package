@@ -1,7 +1,7 @@
 """ sample function """
 
 
-def foo(x: float = 0) -> None:
+def foo() -> str:
     """print a message"""
 
-    print("hello, world!")
+    return "Hello, World!"
