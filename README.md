@@ -9,14 +9,9 @@ via pytest in an environment controlled by tox. Formatting and
 linting are handled by the standard python packages of 
 `black`, `flake8`, `isort`, and `mypy`.
 
-First use of the template can be accomplished with
+The template can be used by
 
 ```bash
-cookiecutter gh:kevinnowland/sample-package
-```
-
-with subsequent use by
-
-```bash
+git clone https://github.com/kevinnowland/sample-package
 cookiecutter sample-package
 ```
