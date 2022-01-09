@@ -10,9 +10,13 @@ template.
 ## Python version and environment
 
 
-Although I, as a former data scientist, use conda to manage environments, I
-am just going to use a mostly blank python 3.9.7 environment and rely on
-poetry to handle virtual environments and packaging.
+I am relying on pyenv to manage my python environments. For me, as a former
+data scientist, this is a switch from relying on conda, so setting this
+up has helped me. I have both 3.9.7 and 3.10.1 installed with 3.9.7 as my
+global default.
+
+I will be relying on poetry to do the setting up of my virtual environments
+and tox for testing in multiple environments.
 
 
 ## License
@@ -31,7 +35,7 @@ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poet
 
 I then ran `poetry init` inside the directory. I specified no dependencies, but I
 did add development dependences, namely, the latest versions of `black`, `flake8`, `isort`,`mypy`,
-and `pytest`. I stated that python 3.9 or higher should be use. I added some configuration
+`pytest`, and `tox`. I stated that python 3.9 or higher should be use. I added some configuration
 for these tools in `pyproject.toml` as well as in `.flake8`.
 
 I added the `pyproject.toml` to the repo.

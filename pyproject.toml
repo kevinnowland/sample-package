@@ -8,7 +8,7 @@ repository = "https://github.com/kevinnowland/sample-package"
 
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.8"
 
 
 [tool.poetry.dev-dependencies]
@@ -18,17 +18,20 @@ isort = "^5.10.1"
 mypy = "^0.931"
 pytest = "^6.2.5"
 pre-commit = "^2.16.0"
+tox = "^3.24.5"
 
 
 [tool.black]
 line-length = 100
-target-version = ['py39']
+target-version = ['py38']
 include = '\.pyi?$'
 exclude = '''
 (
     \(
          \.git
        | \.pytest_cache
+       | \.tox
+       | \.mypy_cache
        | build
        | dist
     \)
@@ -38,6 +41,21 @@ exclude = '''
 
 [tool.isort]
 profile = "black"
+
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py38,py39
+skipsdist = true
+skip_missing_interprters = true
+
+[testenv]
+whitelist_externals = poetry
+commands =
+    poetry install -v
+    poetry run pytest -v
+"""
 
 
 [build-system]
