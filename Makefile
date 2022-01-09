@@ -27,3 +27,9 @@ install:
 test:
 	$(CONDA_ACTIVATE) $(PACKAGE_NAME)
 	pytest -v
+
+
+.PHONY: build
+build:
+	$(CONDA_ACTIVATE) $(PACKAGE_NAME)
+	poetry build
