@@ -1,4 +1,4 @@
-# {{cookiecutter.package_name | replace("-", " ") | }}
+# {{cookiecutter.package_name | replace("-", " ") }}
 
 {{cookiecutter.description}}
 
