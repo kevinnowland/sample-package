@@ -12,6 +12,6 @@ linting are handled by the standard python packages of
 The template can be used by
 
 ```bash
-git clone https://github.com/kevinnowland/sample-package
+git clone https://github.com/kevinnowland/sample-package ~/.cookiecutters
 cookiecutter sample-package
 ```
