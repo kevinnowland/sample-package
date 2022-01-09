@@ -3,3 +3,5 @@ poetry.lock
 *.swp
 .mypy_cache/
 dist
+.tox
+.python-version
