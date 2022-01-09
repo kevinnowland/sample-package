@@ -8,7 +8,7 @@ repository = "https://github.com/kevinnowland/sample-package"
 
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9"
 
 
 [tool.poetry.dev-dependencies]
@@ -23,7 +23,7 @@ tox = "^3.24.5"
 
 [tool.black]
 line-length = 100
-target-version = ['py38']
+target-version = ['py39']
 include = '\.pyi?$'
 exclude = '''
 (
@@ -46,7 +46,7 @@ profile = "black"
 [tool.tox]
 legacy_tox_ini = """
 [tox]
-envlist = py38,py39
+envlist = py39
 skipsdist = true
 skip_missing_interprters = true
 
