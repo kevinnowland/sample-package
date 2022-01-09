@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "sample-package"
+name = "{{cookiecutter.package_name}}"
 version = "0.1.0"
 description = "a sample package"
 authors = ["Kevin Nowland <kevin.nowland@gmail.com>"]
