@@ -58,12 +58,15 @@ installing dependencies.
 ## Pre-commit
 
 
-I also added `pre-commmit` to the development dependencies. We will use this
-to enforce style standards, but I need to set it up.
+I also added `pre-commmit` to the development dependencies and then the corresponding
+`.pre-commit-config.yaml` file to run through `black`, `isort`, `flake8`, and `mypy`
+as well as a YAML linter, a whitespace trimmer, and an end of file checker. It works
+pretty much out of the box.
 
 
 ## Reminders to self about cookie cutter
 
 
 The post gen hooks probably need to cd into the directory, create the conda environment,
-activate it, then run poetry install.
+activate it, then run poetry install. Then need to install the `pre-commit` things
+and run them.
