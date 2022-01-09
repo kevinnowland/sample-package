@@ -10,12 +10,15 @@ repository = "https://github.com/kevinnowland/sample-package"
 [tool.poetry.dependencies]
 python = "^3.9"
 
+
 [tool.poetry.dev-dependencies]
 black = "^21.12b0"
 flake8 = "^4.0.1"
 isort = "^5.10.1"
 mypy = "^0.931"
 pytest = "^6.2.5"
+pre-commit = "^2.16.0"
+
 
 [tool.black]
 line-length = 100
@@ -32,8 +35,10 @@ exclude = '''
 )
 '''
 
+
 [tool.isort]
 profile = "black"
+
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

@@ -58,6 +58,8 @@ installing dependencies.
 ## Pre-commit
 
 
+I also added `pre-commmit` to the development dependencies. We will use this
+to enforce style standards, but I need to set it up.
 
 
 ## Reminders to self about cookie cutter
