@@ -4,7 +4,9 @@ CLEAN_PACKAGE_NAME := sample_package
 
 .PHONY: venv
 venv:
+	-poetry env remove python
 	pyenv local 3.8.12 3.9.7
+	poetry env use python
 	poetry install
 
 
