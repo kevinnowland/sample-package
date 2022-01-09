@@ -2,5 +2,7 @@
     "package_name": "sample-package",
     "author": "Kevin Nowland",
     "email": "kevin.nowland@gmail.com",
-    "year": ["2022"]
+    "year": ["2022"],
+    "repo": "https://github.com/kevinnowland/{{cookiecutter.package_name}}",
+    "description": "a package"
 }

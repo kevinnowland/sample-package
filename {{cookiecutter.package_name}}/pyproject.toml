@@ -2,9 +2,9 @@
 name = "{{cookiecutter.package_name}}"
 version = "0.1.0"
 description = "a sample package"
-authors = ["Kevin Nowland <kevin.nowland@gmail.com>"]
+authors = ["{{cookiecutter.author}} <{{cookiecutter.email}}>"]
 license = "MIT"
-repository = "https://github.com/kevinnowland/sample-package"
+repository = "{{cookiecutter.repo}}"
 
 
 [tool.poetry.dependencies]

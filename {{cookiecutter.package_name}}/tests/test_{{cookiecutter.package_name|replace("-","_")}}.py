@@ -1,4 +1,4 @@
-from sample_package import __version__, foo
+from {{cookiecutter.package_name | replace("-", "_") import __version__, foo
 
 
 def test_version():
